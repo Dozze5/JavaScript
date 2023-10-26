@@ -20,7 +20,15 @@
 
 // console.log(date.toLocaleDateString())
 
-
 // let create = new Date(2023,0,1);
 
+let create = new Date("2023-01-14");
+
 // console.log(create.toDateString())
+
+
+let myStamp = Date.now()
+
+console.log(myStamp)
+
+console.log(create.getTime())
