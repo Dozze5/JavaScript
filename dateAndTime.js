@@ -32,3 +32,7 @@ let myStamp = Date.now()
 console.log(myStamp)
 
 console.log(create.getTime())
+
+// #endregion
+console.log()
+
