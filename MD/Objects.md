@@ -102,3 +102,70 @@ delete person.age;
 
 console.log(person.age); // undefined
 ```
+
+<br>
+
+## Object Iteration
+<font size = "4">Iterating over objects is a common task in JavaScript. It can be done in several ways. One of the most popular ways is to use the for...in loop. This loop will iterate over all of the properties of an object and return the key-value pairs.</font>
+
+```js
+const person = {
+  name: 'John',
+  age: 25
+};
+
+for (let key in person) {
+  console.log(key, person[key]);
+}
+```
+<br>
+
+## Object Keys
+
+<font size = "4">o find out what keys an object has, you can use the Object.keys() method. This method takes an object as an argument and returns an array containing the object's keys.</font>
+
+```js
+const person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+console.log(Object.keys(person));
+// Output: ['name', 'age', 'city']
+```
+
+<br>
+
+## Object Values
+
+<font size = "4">In JavaScript, an object is a collection of key-value pairs. The values can be of any type, including numbers, strings, booleans, arrays, functions, and even other objects. The key is a unique identifier.
+
+Values can be accessed and modified using dot notation or bracket notation. </font>
+
+## Object Define Properties
+
+<font size = "4">The Object.defineProperty() method is used to add a single property to an object, or to modify the attributes of an existing property of an object. The syntax for Object.defineProperty() is as follows:</font>
+
+><font size = "4"> The first argument of Object.defineProperty() is the object on which to define the property. The second argument is the name of the property to be defined or modified. The third argument is an object that specifies the descriptor for the property being defined or modified. The descriptor object can have the following properties:
+>
+><b>configurable</b>: This property specifies whether or not the property can be deleted or modified. It is a Boolean value. The default value is false.
+>
+><b>enumerable</b>: This property specifies whether or not the property can be enumerated in a for-in loop. It is a Boolean value. The default value is false.
+>
+><b>value</b>: This property specifies the value associated with the property. It can be any valid JavaScript value (number, object, function, etc). The default value is undefined.
+>
+><b>writable</b>: This property specifies whether or not the property can be modified. It is a Boolean value. The default value is false.
+>
+><b>get</b>: This property specifies a function that will be called when the property is accessed. The default value is undefined.
+>
+><b>set</b>: This property specifies a function that will be called when the property is modified. The default value is undefined.</font>
+
+```js
+let user = {};
+Object.defineProperty(user, 'name', {
+  value: 'John',
+  writable: true,
+  configurable: true
+});
+```
