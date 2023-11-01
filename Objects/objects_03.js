@@ -10,18 +10,18 @@ const {name:nm} = course // destructuring
 
 console.log(nm)
 
-//? JSON
+// //? JSON
 
-/**
+
     {
         "name": "Anmol",
         "course": "Javascript" ,
         "price":"999"
     }
- */
+ 
 
-    // [
-    //     {},
-    //     {},
-    //     {}
-    // ]
+    [
+        {},
+        {},
+        {}
+    ]
