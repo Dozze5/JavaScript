@@ -1,58 +1,58 @@
 
 
-// const spotifyUser = new Object()
+const spotifyUser = new Object()
 
-// spotifyUser.id = "123abc"
-// spotifyUser.name = "Anmol"
-// spotifyUser.isLoggedIn = false
+spotifyUser.id = "123abc"
+spotifyUser.name = "Anmol"
+spotifyUser.isLoggedIn = false
 
-// console.log(spotifyUser)
+console.log(spotifyUser)
 
-// // !nested  object
-// const regular = {
-//     email : "anmol@gmail.com",
-//     name:{
-//         first: "Anmol",
-//         last: "Chourasiya"
-//     }
-// }
+// !nested  object
+const regular = {
+    email : "anmol@gmail.com",
+    name:{
+        first: "Anmol",
+        last: "Chourasiya"
+    }
+}
 
-// //! merge object
+//! merge object
 
-// const obj1 = {1:'A',2: 'B'}
-// const obj2 = {3:'C',4: 'D'}
-// const obj3 = {5:'E',6: 'F'}
+const obj1 = {1:'A',2: 'B'}
+const obj2 = {3:'C',4: 'D'}
+const obj3 = {5:'E',6: 'F'}
 
-// // const obj4 = Object.assign({}, obj1 , obj2 , obj3)
+// const obj4 = Object.assign({}, obj1 , obj2 , obj3)
 
-// //! another way
+//! another way
 
-// const obj4 = {...obj1,...obj2,...obj3}
+const obj4 = {...obj1,...obj2,...obj3}
 
-// // console.log(obj4)
-
-
-// //! array of objects
-// const user = [
-//     {
-//         id:1
-//     },
-//     {
-//         id:2
-//     },
-//     {
-//         id:3
-//     },
-// ]
-// //! return
-// console.log(Object.keys(spotifyUser))
-// console.log(Object.values(spotifyUser))
-// console.log(Object.entries(spotifyUser))
-
-// console.log(spotifyUser.hasOwnProperty("isLoggedIn"))
+// console.log(obj4)
 
 
-//! object iteration
+//! array of objects
+const user = [
+    {
+        id:1
+    },
+    {
+        id:2
+    },
+    {
+        id:3
+    },
+]
+//! return
+console.log(Object.keys(spotifyUser))
+console.log(Object.values(spotifyUser))
+console.log(Object.entries(spotifyUser))
+
+console.log(spotifyUser.hasOwnProperty("isLoggedIn"))
+
+
+! object iteration
 
 const person = {
     name: 'John',
